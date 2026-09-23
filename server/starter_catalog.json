@@ -1,0 +1,65 @@
+{
+  "creators": [
+    {
+      "id": "demo-zenithmax-originals",
+      "name": "ZenithMax Originals",
+      "bio": "Official original motion graphics and launch demos."
+    },
+    {
+      "id": "demo-pulse-sports",
+      "name": "Pulse Sports",
+      "bio": "Fast sports highlights, training visuals and fan moments."
+    },
+    {
+      "id": "demo-nova-tech",
+      "name": "Nova Tech",
+      "bio": "Future technology, coding and digital creativity."
+    },
+    {
+      "id": "demo-orbit-travel",
+      "name": "Orbit Travel",
+      "bio": "Short travel inspiration and animated destinations."
+    },
+    {
+      "id": "demo-level-up-gaming",
+      "name": "Level Up Gaming",
+      "bio": "Arcade-inspired gaming clips and challenges."
+    },
+    {
+      "id": "demo-bright-study",
+      "name": "Bright Study",
+      "bio": "Learning, study focus and quick educational explainers."
+    },
+    {
+      "id": "demo-laugh-loop",
+      "name": "Laugh Loop",
+      "bio": "Clean comedy cards and playful short-form ideas."
+    },
+    {
+      "id": "demo-frame-lab",
+      "name": "Frame Lab",
+      "bio": "Photography, design, art and creator experiments."
+    },
+    {
+      "id": "demo-daily-motion",
+      "name": "Daily Motion Studio",
+      "bio": "Lifestyle, motivation and everyday creative shorts."
+    },
+    {
+      "id": "demo-cosmic-science",
+      "name": "Cosmic Science",
+      "bio": "Space, science and curiosity in short visual bursts."
+    },
+    {
+      "id": "demo-sound-vision",
+      "name": "Sound Vision",
+      "bio": "Original silent beat visualizers and music-inspired motion."
+    },
+    {
+      "id": "demo-zenith-news",
+      "name": "Zenith Newsroom",
+      "bio": "Fictional newsroom graphics and community updates."
+    }
+  ],
+  "videos": []
+}
