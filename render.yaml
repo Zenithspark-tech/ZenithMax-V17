@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: zenithmax-v17
+    name: zenithmax-v17-1-free
     runtime: node
-    plan: starter
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /api/health
@@ -11,13 +11,9 @@ services:
         generateValue: true
       - key: REFRESH_SECRET
         generateValue: true
-      - key: DATA_DIR
-        value: /var/data
+      # Optional Pexels discovery. Add PEXELS_API_KEY in Render Environment.
+      # - key: PEXELS_API_KEY
       # Optional server-side AI provider. Use an OpenAI-compatible endpoint.
       # - key: AI_API_URL
       # - key: AI_API_KEY
       # - key: AI_MODEL
-    disk:
-      name: zenithmax-data
-      mountPath: /var/data
-      sizeGB: 20

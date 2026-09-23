@@ -19,3 +19,8 @@ Set `PEXELS_API_KEY` in the **ZenithMax web service** Environment Variables. Nev
 
 ### Production uploads
 The repository's local `/uploads` path is suitable for development, but production should use durable persistent storage/object storage for user-uploaded media.
+
+
+## Render Free plan note
+
+The Free Render deployment intentionally does not request a persistent disk. The application keeps the database and creator-uploaded media on the service's ephemeral local filesystem, so those local files are not guaranteed to survive restarts or redeploys. Use external object storage and a managed database before relying on the deployment for durable production media.
