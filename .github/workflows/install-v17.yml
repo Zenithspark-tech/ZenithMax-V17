@@ -1,0 +1,38 @@
+name: Install ZenithMax V17.1
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "ZenithMax_V17_1_URL_Media.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  install-v17:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract V17.1
+        run: |
+          rm -rf /tmp/zenithmax-v17
+          mkdir -p /tmp/zenithmax-v17
+
+          unzip -q ZenithMax_V17_1_URL_Media.zip -d /tmp/zenithmax-v17
+
+          cp -a /tmp/zenithmax-v17/zenithmax_v13/. .
+
+          rm -f ZenithMax_V17_1_URL_Media.zip
+
+      - name: Commit V17.1
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Install ZenithMax V17.1 URL Media" || echo "No changes to commit"
+          git push
